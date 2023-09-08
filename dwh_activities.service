@@ -1,0 +1,12 @@
+[Unit]
+Description=Script export segment et activités ES
+[Service]
+Type=simple
+ExecStart=/home/ekiponet/dwh/activities/venv/bin/python /home/ekiponet/dwh/activities/run.py
+Restart=always
+User=andre
+WorkingDirectory=/home/ekiponet/dwh/activities/
+[Install]
+WantedBy=multi-user.target
+
+
